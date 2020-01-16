@@ -8,6 +8,7 @@ Resources:
       ResponseType: DEFAULT_4XX
       RestApiId:
         Ref: 'ApiGatewayRestApi'
+
   GatewayResponseDefault5XX:
     Type: 'AWS::ApiGateway::GatewayResponse'
     Properties:
