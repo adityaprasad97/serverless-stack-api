@@ -12,7 +12,7 @@ plugins:
 
 resources:
   - ${file(resources/api-gateway-errors.yml)}
-  
+
 custom:
   bundle:
     linting: false
@@ -54,52 +54,52 @@ functions:
     handler: create.main
     events:
       - http:
-        path: notes
-        method: post
-        cors: true
-        authorizer: aws_iam
+          path: notes
+          method: post
+          cors: true
+          authorizer: aws_iam
   
   get:
     handler: get.main
     events:
       - http:
-        path: notes/{id}
-        method: get
-        cors: true
-        authorizer: aws_iam
+          path: notes/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
   
   list:
     handler: list.main
     events:
       - http:
-        path: notes
-        method: get
-        cors: true
-        authorizer: aws_iam
+          path: notes
+          method: get
+          cors: true
+          authorizer: aws_iam
   
   update:
     handler: update.main
     events:
-      - http:
-        path: notes/{id}
-        method: put
-        cors: true
-        authorizer: aws_iam
+      - http:  
+          path: notes/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
 
   delete:
     handler: delete.main
     events:
       - http:
-        path: notes/{id}
-        method: delete
-        cors: true
-        authorizer: aws_iam
+          path: notes/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
 
   billing:
     handler: billing.main
     events:
       - http:
-        path: billing
-        method: post
-        cors: true
-        authorizer: aws_iam
+          path: billing
+          method: post
+          cors: true
+          authorizer: aws_iam
