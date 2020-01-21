@@ -58,3 +58,4 @@ a.json
 billing.js 
 ./tests/billing.test.js
 ./mocks/billing-event.json 
+aws_info.txt
