@@ -53,3 +53,8 @@ env.yml
 
 # authetication rule for identity pool
 a.json
+
+#billing not avaiable yet so putting in gitignore
+billing.js 
+./tests/billing.test.js
+./mocks/billing-event.json 
