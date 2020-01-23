@@ -1,3 +1,5 @@
+org: adityaprasad97
+app: notes-app
 service: notes-app-2-api
 
 # Create an optimized package for our functions
