@@ -5,7 +5,7 @@ export function success(body) {
 
 // eslint-disable-next-line require-jsdoc
 export function failure(body) {
-  return buildResponse(200, body);
+  return buildResponse(500, body);
 }
 
 // eslint-disable-next-line require-jsdoc
